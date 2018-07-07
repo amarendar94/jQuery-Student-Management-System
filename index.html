@@ -1,0 +1,37 @@
+<html>
+<head>
+        <title>studentMangement</title>
+        <link type="text/css" rel="stylesheet" href="app.css">
+</head>
+<body>
+    
+        <input id="firstname" type="text" placeholder="Firstname" required><br>
+        <input id="lastname" type="text" placeholder="Lastname" required><br>
+        <input id="email" type="email" placeholder="Email" required><br>
+        <input id="location" type="text" placeholder="State eg. NY" required><br>
+        <input id="phone" type="tel" placeholder="Phone" required><br>
+        <input id="technology" type="text" placeholder="UI/Java/Bigdata..." required><br>
+        <input id="comm_address" type="text" placeholder="Communication Address" required><br>
+        <input id="perm_address" type="text" placeholder="Permanent Address" required><br><br><br>
+        <input id="addStudent" type="button" onclick="addStudent()" value="Save"><br><br>
+
+    <select id="sel" onchange="dropdown();">
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="50"> 50</option>
+        <option value="100">100</option>
+    </select>
+
+<h3>fliter by </h3><input type="text" id="myinput" onkeyup="myFunction()"/><br><br>
+<div id="display">
+    
+</div>
+    <p id="message"></p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="app.js"></script>
+   
+    
+</body>
+
+</html>
+
